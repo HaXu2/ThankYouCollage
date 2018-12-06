@@ -44,6 +44,9 @@ void draw(){
   OK=loadImage("OK.png");
   image(OK,350,650);
 }else{
+
+
+//background
   background(255);
   fill(255);
     rect(200,150,600,600,100);
