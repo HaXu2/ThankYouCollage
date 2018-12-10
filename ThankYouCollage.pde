@@ -1,9 +1,14 @@
 //add thank you code here
 PImage img;
-PImage OK;
+PImage thanks;
 
 void setup(){
   size(1000,900);
+  
+  thanks = loadImage("OK.png");
+  img=loadImage("fullheart.png");
+ 
+   
 }
 void draw(){
   if(mousePressed){
@@ -39,10 +44,12 @@ void draw(){
   textSize(15);
   text("because of you",660,680);
   text("I am who I am now",650,700);
-  img=loadImage("fullheart.png");
-  image(img,310,300);
-  OK=loadImage("OK.png");
-  image(OK,350,650);
+ 
+ 
+ 
+ image(img,310,300);
+ image(thanks,350,650);
+  
 }else{
 
 
@@ -75,9 +82,9 @@ void draw(){
   ellipse(960,300,150,150);
   fill(24,28,173,(random(144)));
   ellipse(800,450,150,150);
-img=loadImage("fullheart.png");
+  
+
 image(img,310,300);
-OK=loadImage("OK.png");
-image(OK,350,650);
+image(thanks,350,650);
 }
 }
